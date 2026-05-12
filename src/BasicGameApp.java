@@ -17,9 +17,14 @@ public class BasicGameApp {
             deck[x] = new Card("hearts",10,x);
             deck[x].printInfo();
         }
+
     }
 
     //todo: make a printDeck method that prints the deck with printinfo
+
+    public void printDeck(){
+
+    }
 
     public void compare(){
 
