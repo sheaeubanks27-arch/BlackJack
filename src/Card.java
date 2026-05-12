@@ -6,8 +6,24 @@ public class Card {
     //todo: make a constructor that has three parameters, one for each variable
     //todo: set the instance variables according to the parameters
 
-    public Card(String pSuit, int pValue, int pName){
-        suit = pSuit;
+    public Card(int pSuit, int pValue, int pName){
+        if(pSuit == 0){
+            suit = "hearts";
+        }
+
+        if(pSuit == 1){
+            suit = "diamonds";
+        }
+
+        if(pSuit == 2){
+            suit = "spades";
+        }
+
+        if (pSuit == 3){
+            suit = "clubs";
+
+        }
+
         value = pValue;
         if(pName == 0){
             name = "Ace";
@@ -70,8 +86,8 @@ public class Card {
             value = 10;
         }
         else if(pName == 9){
-            name = "Ace";
-            value = 1;
+            name = "ten";
+            value = 10;
         }
 
        // name = pName;

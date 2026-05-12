@@ -1,10 +1,16 @@
 public class Player {
-    int cardTotal;
-    boolean isBust;
-    boolean isHit;
-    Card[] hand;
-    String name;
+    public int cardTotal;
+    public boolean isBust;
+    public  boolean isHit;
+    public Card[] hand;
+    public  String name;
 
+    public Player(){
+        cardTotal = 2;
+        isBust = false;
+        isHit = true;
+        name = "shea";
+    }
     public void hit(){
 
     }
