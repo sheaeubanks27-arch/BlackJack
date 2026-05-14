@@ -10,7 +10,7 @@ public class Player {
         isBust = false;
         isHit = true;
         name = "shea";
-        hand = new Card[3];
+        hand = new Card[2];
     }
 
     public void printInfo(){
@@ -18,9 +18,20 @@ public class Player {
         System.out.println("It is " + isHit +" that the player has hit ");
         System.out.println("The player's name is: " + name);
         System.out.println("It is " + isBust + " that the hand has busted");
-        System.out.println("The hand is: " + hand);
+        for(int s = 0; s < hand.length; s++){
+            hand[s].printInfo();
+        }
     }
 
+    //todo: make a method called calculate total(){}
+
+    public void calculateTotal(){
+        cardTotal = 0;
+        for(int f = 0; f< hand.length; f++){
+            cardTotal += hand[f].value;
+
+        }
+    }
     public void hit(){
 
     }
